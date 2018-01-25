@@ -5,7 +5,7 @@
   <head>
     <style>
       body  {
-	background-image: url("lake.jpg");
+	background-image: url("tree.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100vw 100vh;
@@ -13,141 +13,120 @@
       }
 
       div {
-	opacity: .5;
-	margin: 0;
 	width: 100%;
+	height: 220px;
       }
 
       div h2 {
-	text-color: blue;
+	font-size: 3em;
+	color: black;
 	text-align: center;
-      }  
+	margin: auto;
+	padding: 2em;
+      }
+
+      div u {
+	text-decoration: none;
+	border-bottom: 1px solid black;  
+      }
+      div u:hover {
+	text-decoration: none;
+	border-bottom: 2px solid black;
+      } 
+      div h2.title {
+	color: red;
+      }
 
       div.light {
-       	background-color: white;
+       	background-color: transparent;
       }  
 
       div.dark {
-	background-color: grey;
+	background-color: rgba(0,0,0,.5);
       }
 
       header,footer {
 	box-sizing: border-box;
-	width: 100vw;
+	height: 50px;	
 	padding: 10px;
 	color: white;
-       	border-left: 4px solid #0099cc;
-       	border-right: 4px solid #0099cc;
-       	background-color: blue;
 	clear: left;
         text-align: center;
+	background: black;
       }
 
-      nav {
-	float: left;
-       	max-width: 160px;
-	margin: 0;
-	padding: 1em;
+      header a:link, header a:visited {
+	height: 50px;
+    	background-color: white;
+    	color: white;
+	border: 2px solid black;
+    	padding: 14px 25px;
+    	text-align: center;
+    	text-decoration: none;
+   	display: inline-block;
+	text-color: black;
+      }	
+
+
+      header a:hover, header a:active {
+    	background-color: black;
+	text-color: white;
       }
 
-      ul {
-	list-style-type: none;
-	padding: 0;
+      footer a {
+	color: red;
       }
 
-      ul a {
-	color: white;
-        text-decoration: none;
-      }
-
-      article {
-	margin-left: 170px;
-	padding: 1em;
-	overflow: hidden;
-      }
-
-      article h1 {
-	color: blue;
-      }
-
-      article h3 {
-        color: #0099cc;
-      }
-
-      article p {
-	color: blue;
-      }
     </style>
   </head>
 
   <body>
 
     <header>
-      <ul>
-        <li><a href="#info"><b>Information</b></a><li>
-        <li><a href="#about"><b>About Me</b></a></li>
-	<li><a href="#projects"><b>Personal Projects</b></a></li>
-	<li><a href="#fun"><b>Entertainment</b></a></li>
-      </ul>
+      <a href="default.asp" target="_blank">MY PROJECTSSSS</a>
+      <a href="default.asp" target="_blank">INFORMATIONNNN</a>
+      <a href="default.asp" target="_blank">TEST</a>
     </header>
 
     <div class="light">
-      	<h2>Owen Sullivan</h2>
+      	<h2 class="title"><u>Owen Sullivan</u></h2>
     </div>
 
     <div class="dark">
-      	<h2>Creator.</h2>
-    </div>
-
-    <div class="light">
-      	<h2>Programmer.</h2>
-    </div>
-
-    <div class="dark">
-      	<h2>Projects</h2>
+      	<h2>Creator</h2>
     </div>
 
     <div class="light">
-      <article id="info">
-        <a href="info"></a>
-        <h1>Website Information</h1>
-        <h3>Main Goal</h3>
-        <p>The main goals of this website is to:</p>
-        <p>Share personal projects with friends, family, and companies,</p>
-        <p>But also gain experience with HTML/CSS, JavaScript, and nginx.</p>  
-      </article>
+      	<h2>Programmer</h2>
     </div>
-    
+
     <div class="dark">
-      <article id=about>
-        <a href="about"></a>
-        <h1>About me</h1>
-        <h3>Programming Experience</h3>
-        <p> Java, Python</p>
-        <p>linux</p>
-        <p>C++</p>
-        <p>And other things</p>
-      </article>
+      	<h2>Student</h2>
     </div>
-    
+
     <div class="light">
-      <article>
-  	<h1>Personal Projects</h1>
-	<h3>Esoteric language Compiler</h3>
-	<p>Compiler written in C</p>
-	<h3>Arduino Console</h3>
-	<p>Console made out of arduino</p>
-      </article>
+      	<h2 class="title"><u>Projects</u></h2>
     </div>
-    
+
     <div class="dark">
-      <article>
-	<h1>Contact information</h1>
-	<p>Phone</p>
-	<p>Email</p>
-	<p>github</p>
-	<p>smoke signal</p>
-      </article>
+      	<h2>Esoteric Language Compiler</h2>
     </div>
-  <footer><b>Owen Sullivan~multiojuice@gmail.com</b></footer>
+
+    <div class="light">
+      	<h2>Arduino TV-Out Console</h2>
+    </div>
+
+    <div class="dark">
+      	<h2>"One True Light"</h2>
+    </div>
+
+    <div class="light">
+      	<h2>"Thrive"</h2>
+    </div>
+
+    <footer>
+      <p>Owen Sullivan ~ <a href="mailto:multiojuice@gmail.com">Multiojuice@gmail.com</a></p>
+    </footer>
+
+  </body>
 </html>
