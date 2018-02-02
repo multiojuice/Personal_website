@@ -3,6 +3,7 @@
   <title>Owen Sullivan</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <head>
+    
     <style>
       body  {
 	background-image: url("tree.png");
@@ -12,36 +13,41 @@
 	margin: 0;
       }
 
-      div {
-	width: 100%;
-	height: 220px;
-      }
-
-      div h2 {
+      h2 {
 	font-size: 3em;
 	color: black;
 	text-align: center;
 	margin: auto;
-	padding: 2em;
+	padding: 1em;
       }
 
-      div u {
+      .row {
+	width: 100%;
+	height: 180px;
+      }
+
+      u {
 	text-decoration: none;
 	border-bottom: 1px solid black;  
       }
-      div u:hover {
+      h2 u:hover {
 	text-decoration: none;
 	border-bottom: 2px solid black;
       } 
-      div h2.title {
+      .title {
 	color: red;
+	width: 30%;
       }
 
-      div.light {
+      .small {
+	width: 50%;
+      }
+
+      .light {
        	background-color: transparent;
       }  
 
-      div.dark {
+      .dark {
 	background-color: rgba(0,0,0,.25);
       }
 
@@ -64,8 +70,7 @@
         background: black;
       }
 
-
-      header a:link, header a:visited {
+      a:link, a:visited {
         box-sizing: border-box;
         padding: 15px;
         height: 50px;
@@ -79,7 +84,6 @@
         color: black;
       }
 
-
       header a:hover, header a:active {
         background-color: darkgrey;
         color: white;
@@ -89,6 +93,16 @@
 	color: red;
       }
 
+      .slide-in {
+	visibility: visible !important;
+	float: left;
+	position: relative;
+      }
+
+      .hidden {
+	visibility: hidden;
+      }
+
     </style>
   </head>
 
@@ -96,43 +110,47 @@
 
     <header>
       <a href="projects.html">MY PROJECTSSSS</a>
-      <a href="default.asp" target="_blank">INFORMATIONNNN</a>
+      <a href="index.html">INFORMATIONNNN</a>
       <a href="default.asp" target="_blank">TEST</a>
     </header>
 
-    <div class="light">
-      	<h2 class="title"><u>Owen Sullivan</u></h2>
+    <div class="light row">
+	<div class="hidden" id="sideText">
+		Test
+	</div>
+      	<h2 class="title" id="name"><u>Owen Sullivan</u></h2>
     </div>
 
-    <div class="dark">
+
+    <div class="dark row">
       	<h2>Creator</h2>
     </div>
 
-    <div class="light">
+    <div class="light row">
       	<h2>Programmer</h2>
     </div>
 
-    <div class="dark">
+    <div class="dark row">
       	<h2>Student</h2>
     </div>
 
-    <div class="light">
+    <div class="light row">
       	<h2 class="title"><u>Projects</u></h2>
     </div>
 
-    <div class="dark">
+    <div class="dark row">
       	<h2>Esoteric Language Compiler</h2>
     </div>
 
-    <div class="light">
+    <div class="light row">
       	<h2>Arduino TV-Out Console</h2>
     </div>
 
-    <div class="dark">
+    <div class="dark row">
       	<h2>"One True Light"</h2>
     </div>
 
-    <div class="light">
+    <div class="light row">
       	<h2>"Thrive"</h2>
     </div>
 
@@ -140,5 +158,20 @@
       <p>Owen Sullivan ~ <a href="mailto:multiojuice@gmail.com">Multiojuice@gmail.com</a></p>
     </footer>
 
+    <script>
+	function moveIn() {
+		document.getElementById('sideText').classList.add('slide-in')
+	}
+            
+	function moveOut() {
+		document.getElementById('sideText').classList.remove('slide-in')
+	}
+	
+	document.getElementById('name').onmouseover = moveIn;
+	document.getElementById('name').onmouseout = moveOut;
+
+	    
+    </script>
+    
   </body>
 </html>
