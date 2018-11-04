@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-const Home = () => {
-  return <div>Home</div>
-}
+import {
+  Home
+} from './pages';
 
 const Projects = () => {
   return <div>Projects</div>
@@ -14,7 +14,7 @@ class App extends Component {
     return (
       <Switch>
         <Route exact path='/' component={Home}/>
-        <Route exact path='/projects' component={Projects}/>
+        <Route exact path='/projects/:id' component={Projects}/>
       </Switch>
       );
   }
