@@ -7,26 +7,27 @@ import {
   WholePage,
   WholePageTitle
 } from './StyledComponents';
+import Tile from './Tile';
 
-export default () => {
+import TileData from '../../content/pages';
+
+const getTiles = (navigatePage) => {
+  return TileData.map(item =>
+    <Tile 
+      navigatePage={() => navigatePage(item.route)}
+      title={item.title}
+    />
+    );
+}
+
+export default ({history}) => {
   return (
     <PageWrapper clear>
       <WholePage>
         <WholePageTitle>Owen Sullivan</WholePageTitle>
       </WholePage>
-      <PageWrapper ehh>
-        <MediumContainer colors={['#Bbd9ee', '#C0c0c0']}>
-          <MediumTitle>Projects</MediumTitle>
-        </MediumContainer>
-        <MediumContainer colors={['#Bbd9ee', '#C0c0c0']}>
-          <MediumTitle>Experience</MediumTitle>
-        </MediumContainer>
-        <MediumContainer colors={['#Bbd9ee', '#C0c0c0']}>
-          <MediumTitle>Me</MediumTitle>
-        </MediumContainer>
-        <MediumContainer colors={['#Bbd9ee', '#C0c0c0']}>
-          <MediumTitle>Day to Day</MediumTitle>
-        </MediumContainer>
+      <PageWrapper front>
+        {getTiles(history.push)}
       </PageWrapper>
     </PageWrapper>
   );

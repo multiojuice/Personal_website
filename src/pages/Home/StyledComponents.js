@@ -8,7 +8,7 @@ export const PageWrapper = styled.div`
   width: 100%;
   height: 100%;
   background-color: ${({clear}) => clear ? '' : '#f7f7f7'}
-  z-index: ${({ehh}) => ehh ? 1 : ''}
+  z-index: ${({front}) => front ? 1 : ''}
 `;
 
 export const WholePage = styled.div`
@@ -21,17 +21,18 @@ export const WholePage = styled.div`
 `;
 
 export const WholePageTitle = styled.h1`
-  color: white;
-  padding: 30px;
-  font-size: 48px;
+  font-size: 60px;
   position: fixed;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border-radius: 15px;
-  background-image: radial-gradient(black, transparent);`;
+  -webkit-text-stroke: 1px black;
+  color: white;
+  
+  text-shadow:
+    3px 3px 0 #000,
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+   -1px  1px 0 #000,
+    1px  1px 0 #000;
+`;
 
 export const LargeContainer = styled.div`
   width: 100%;
@@ -62,8 +63,9 @@ export const MediumContainer = styled.div`
   align-items: center;
   background-color: #f7f7f7;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: box-shadow 1s;
+  transition: box-shadow 1s, background-color 5s;
   :hover {
+    background-color: blue;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
 `;
