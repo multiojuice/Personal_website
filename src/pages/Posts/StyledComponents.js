@@ -49,6 +49,7 @@ export const ReadMoreLink = styled.a`
   cursor: pointer;
   text-decoration: none;
   color: white;
+  
   :hover {
     text-decoration: underline;
   }
