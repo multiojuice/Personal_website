@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
+import ProjectsData from './content/projects';
 import {
   Home,
-  Projects
+  Posts
 } from './pages';
 
 class App extends Component {
@@ -11,8 +12,8 @@ class App extends Component {
     return (
       <Switch>
         <Route exact path='/' component={Home}/>
-        <Route exact path='/projects' component={Projects}/>
-        <Route exact path='/projects/:id' component={Projects}/>
+        <Route exact path='/projects' render={() => <Posts data={ProjectsData}/>}/>
+        <Route exact path='/projects/:id' component={Posts}/>
       </Switch>
       );
   }
