@@ -5,10 +5,12 @@ import {
   PhotoDiv,
   PostWrapper,
   TextDiv,
-  PostPhoto
+  PostPhoto,
+  ReadMoreLink
 } from './StyledComponents';
 
-export default ({data}) => {
+export default ({data, type}) => {
+  console.warn(data);
   return (
     <PageWrapper>
       {
@@ -23,6 +25,7 @@ export default ({data}) => {
             <TextDiv>
               <h3>{post.title}</h3>
               <p>{post.description}</p>
+              <ReadMoreLink href={`/${type}/${post.id}`}>Read more</ReadMoreLink>
             </TextDiv>
           </PostWrapper>)
         )

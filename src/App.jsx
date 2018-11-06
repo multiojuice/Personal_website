@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import ProjectsData from './content/projects';
+import WritingsData from './content/writings';
 import {
   Home,
   Posts
@@ -12,8 +13,9 @@ class App extends Component {
     return (
       <Switch>
         <Route exact path='/' component={Home}/>
-        <Route exact path='/projects' render={() => <Posts data={ProjectsData}/>}/>
+        <Route exact path='/projects' render={() => <Posts type="projects" data={ProjectsData}/>}/>
         <Route exact path='/projects/:id' component={Posts}/>
+        <Route exact path='/writings' render={() => <Posts type="writings" data={WritingsData}/>}/>
       </Switch>
       );
   }
