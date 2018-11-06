@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactMarkdown from 'react-markdown';
 
 import {
   PageWrapper
@@ -18,11 +19,11 @@ class SinglePost extends Component {
   }
 
   render() {
-    const { content } = this.state;
+    const { content } = this.state.content;
     console.warn(content)
     return (
       <PageWrapper>
-        Hey
+        <ReactMarkdown source={content} />
       </PageWrapper>
     );
   }

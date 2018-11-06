@@ -1,14 +1,3 @@
-
-const data = [
-  {
-    id: 'beginnings',
-    title: 'Beginnings',
-    description: 'sdsafuh asdpiufj [adsiohubnf oiadusbhjfioj hdsjb oifsdahbk',
-    content: beginnings,
-    extra: 'Monday, November 5th, 2018'
-  }
-]
-
 const beginnings = `
 # Beginnings
 ### The start of some new things
@@ -36,5 +25,15 @@ This one is probably the easiest out of the things I stated above. I want to pro
 #### Finishing thoughts
 It is hard to finish things, and it is easy to start things, but I want to get passionate about continuing these habits and since I have been doing it, \`two whole days\`, my days were pretty great. It is much easier to stick to good things and all I want is to have these be good things : )
 `
+
+const data = [
+  {
+    id: 'beginnings',
+    title: 'Beginnings',
+    description: 'sdsafuh asdpiufj [adsiohubnf oiadusbhjfioj hdsjb oifsdahbk',
+    content: beginnings,
+    extra: 'Monday, November 5th, 2018'
+  }
+]
 
 export default data;
