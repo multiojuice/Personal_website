@@ -30,10 +30,8 @@ export const TitleWrapper = styled.div`
 
   h3 {
     font-weight: 100;
-    font-size: 18px;
-    font-style: italic;
+    font-size: 22px;
     margin-top: 0;
-
   }
 `;
 
@@ -45,18 +43,21 @@ export const ContentWrapper = styled.div`
   border-radius: 3px;
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Corben', Georgia, Times, serif;
     font-weight: 100;
     margin: 10px 0;
   }
 
   h5 {
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
     font-size: 24px;
   }
 
   p {
+    font-family: 'monospace';
     color: grey;
     font-style: inherit;
+    font-size: 18px;
+    line-height: 30px;
   }
 
   blockquote {
