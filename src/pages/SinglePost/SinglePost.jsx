@@ -2,7 +2,12 @@ import React, { Component } from 'react';
 import ReactMarkdown from 'react-markdown';
 
 import {
-  PageWrapper
+  PageWrapper,
+  ContentWrapper,
+  HeaderWrapper,
+  HeaderTitle,
+  HeaderAuthor,
+  TitleWrapper
 } from './StyledComponents';
 
 class SinglePost extends Component {
@@ -10,20 +15,32 @@ class SinglePost extends Component {
     super(props);
     console.warn(props)
 
-    const content = props.data.find((element) => element.id === props.match.params.id);
+    const data = props.data.find((element) => element.id === props.match.params.id);
     
     this.state = {
-      content,
+      data,
       hasError: false
     }
   }
 
   render() {
-    const { content } = this.state.content;
+    const { content, title } = this.state.data;
     console.warn(content)
     return (
       <PageWrapper>
-        <ReactMarkdown source={content} />
+        <HeaderWrapper>
+          <TitleWrapper>
+            <h1>
+              {title}
+            </h1>
+            <h3>
+              Owen Sullivan
+            </h3>
+          </TitleWrapper>
+        </HeaderWrapper>
+        <ContentWrapper>
+          <ReactMarkdown source={content} />
+        </ContentWrapper>
       </PageWrapper>
     );
   }
