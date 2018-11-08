@@ -11,27 +11,36 @@ export const HeaderWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   height: 40vh;
+  width: 100%;
+  background-color: #C23F38;
+  margin-bottom: 120px;
 `;
 
 export const TitleWrapper = styled.div`
-  position: fixed;
   font-size: 48px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+  padding: 30px;
+  background-color: #600473;
+  width: 70%;
+  height: 40%;
+  justify-content: center;
+
   h1 {
     font-weight: 100;
+    color: #F5FAFA;
     font-size: 52px;
-    text-shadow: 1px 1px 1px #ccc;
+    text-shadow: 1px 1px 1px #6D929B;
   }
 
   h3 {
     font-weight: 100;
     font-size: 22px;
     margin-top: 0;
+    color: #6D929B;
   }
 `;
 
@@ -50,11 +59,12 @@ export const ContentWrapper = styled.div`
   h3 {
     font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
     font-size: 24px;
+    color: #6D929B;
   }
 
   p {
     font-family: 'monospace';
-    color: grey;
+    color: #B7AFA3;
     font-style: inherit;
     font-size: 18px;
     line-height: 30px;

@@ -7,7 +7,8 @@ import {
   HeaderWrapper,
   HeaderTitle,
   HeaderAuthor,
-  TitleWrapper
+  TitleWrapper,
+  ColorFiller
 } from './StyledComponents';
 
 class SinglePost extends Component {

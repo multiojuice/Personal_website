@@ -10,18 +10,19 @@ export const PageWrapper = styled.div`
 
 export const PostWrapper = styled.div`
   margin-bottom: 40px;
+  border-radius: 4px;
   width: 100%;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  background-image: linear-gradient(white,black);
+  background-image: linear-gradient(#F5FAFA,#C1DAD6);
   flex-direction: ${({direction}) => (direction ? 'row' : 'row-reverse')}
 `;
 
 export const PhotoDiv = styled.div`
   height: 500px;
   width: 35%;
-  background-color: white;
+  background-color: #F5FAFA;
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -35,8 +36,8 @@ export const PostPhoto = styled.img`
 `;
 
 export const TextDiv = styled.div`
-  color: white;
-  background-color: black;
+  color: #6D929B;
+  background-color: #C1DAD6;
   width: 55%;
   position: relative;
 `;
@@ -48,7 +49,7 @@ export const ReadMoreLink = styled.a`
   font-weight: bold;
   cursor: pointer;
   text-decoration: none;
-  color: white;
+  color: #6D929B;
   
   :hover {
     text-decoration: underline;
