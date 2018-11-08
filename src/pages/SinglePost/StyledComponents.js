@@ -28,6 +28,7 @@ export const TitleWrapper = styled.div`
   width: 70%;
   height: 40%;
   justify-content: center;
+  border-radius: 3px;
 
   h1 {
     font-weight: 100;
@@ -50,6 +51,7 @@ export const ContentWrapper = styled.div`
   padding: 30px 40px;
   z-index: 1;
   border-radius: 3px;
+  border-left: 40px solid #005995;
 
   h1, h2, h3, h4, h5, h6 {
     font-weight: 100;
@@ -59,12 +61,12 @@ export const ContentWrapper = styled.div`
   h3 {
     font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
     font-size: 24px;
-    color: #6D929B;
+    color: #005995;
   }
 
   p {
     font-family: 'monospace';
-    color: #B7AFA3;
+    color: #600473;
     font-style: inherit;
     font-size: 18px;
     line-height: 30px;
