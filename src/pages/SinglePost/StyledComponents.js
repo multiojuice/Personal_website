@@ -55,7 +55,18 @@ export const ContentWrapper = styled.div`
 
   h1, h2, h3, h4, h5, h6 {
     font-weight: 100;
-    margin: 10px 0;
+    margin: 20px 0;
+  }
+
+  h5 {
+    color: #005995;
+    font-size: 18px;
+    font-family: 'monospace';
+    margin-top: 30px;
+    
+    :before {
+      content: '::';
+    }
   }
 
   h3 {

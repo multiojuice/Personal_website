@@ -26,8 +26,6 @@ It is hard to finish things, and it is easy to start things, but I want to get p
 `
 
 const passion = `
-# passion over paper?
-
 ### Preface
 I have been applying to multiple companies looking for an internship over the next summer, but it is hard to display my passion or push for learning over a cover letter or one page resume. So far everything I write I cannot focus on my true feelings or thought about myself and my experiences because I am focusing on making them sound not fake, even though they aren't. I'm talking about learning outside of work and school on my own everyday, programming side projects, pushing my friends to work with me, or just getting my co-workers fired up about technology; on paper it all seems fake :(
 
@@ -39,7 +37,6 @@ I am still not sure, in time, and with responses from employers, I am sure that 
 `;
 
 const heavyRotation = `
-# my heavy rotation
 ### The Albums
 > Colour Flow - Vanilla Gorilla
 > Lush - Snail Mail
