@@ -47,7 +47,7 @@ export const ContentWrapper = styled.div`
     margin: 10px 0;
   }
 
-  h5 {
+  h3 {
     font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
     font-size: 24px;
   }
