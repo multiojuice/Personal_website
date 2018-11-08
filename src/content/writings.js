@@ -37,6 +37,41 @@ What is the point of learning things you won't use??? So you can use it later! D
 ### How do I display this?
 I am still not sure, in time, and with responses from employers, I am sure that I can make edits to my summaries to display how I actually am. I am going to make edits and finish this out tomorrow. I am tired.
 `;
+
+const heavyRotation = `
+# my heavy rotation
+### The Albums
+> Colour Flow - Vanilla Gorilla
+> Lush - Snail Mail
+> When I think Of You In A Castle - Post Animal
+> Room on Fire - The Strokes
+> Swimming - Mac Miller
+> A Flourish and Spoil - The Districts
+
+### Preface
+I am talking about those albums... those albums that you just cycle through. The other day, I listened to *Colour Flow* ~7 times in a row and only stopped because I felt that could be weird. I turned them off, just to go and listen to *Lush* 3 times in a row. I know other people do this, but I am not too picky about my music, so I am now curious to why I have been listening to these so much.
+
+### Outside influence
+Well, I have a feeling that Spotify is a large part of it. When you open the app it has right at the top in huge letters, 'Your Heavy rotation', which when I see all my favorite albums literally one click away, why would I ever search for other music? Recently, I haven't had the same amount of time I have had in the past to just search for new artists and potential albums that I would actually buy (see next section), so the only ways I really find new music is from Spotify's Discover Weekly playlist. The problem with this is that I like to listen to albums when I listen to music.
+
+### When the rotation rotates...
+Albums slowly fall out of this rotation as new ones come in, however I always buy the albums that come into the rotation. I buy a vinyl copy so that I will always have a physical copy of this album. Not because I will never be able to listen to it again in the future, with the internet I will always be able to find them. But because I will probalby forget this master piece that I have listened to countless times and if I need to lug it around in a crate to everywhere I move, that album will always be available to remember and listen to again.
+
+### Why I listen to only albums
+##### Pros of Albums
+What I mean by this is that, in my humble opinion, music is best consumed in the form of an album. An album, if it is could, usually sounds like a complete thought or an adventure. It should lead you places, pull you back out of them, then surprise you, or something along these lines; while having a sweet sound at the same of course. 
+
+##### Cons of Playlists
+Sadly a playlist is usually just a mashup of all different thoughts that don't piece together like the artist of the songs intended them to. If you find a playlist which has songs all on the same page, like all happy songs about dogs, then throughout that whole listening experience that happy feelign will just numb out; if there are sad dog songs mixed in the correct way, your mood can be almost reset.
+
+##### Cons of listening song by song
+A song is like a sentence in a paragraph or maybe even a sentence in an entire book, depending on what Album the song comes from. If you pull a song out of an album, it is like reading just that one sentence from the book; you will have absolutely no idea what context the piece was written in. Is this the triumph of the hero's story? Or maybe the success they had before their decline into sadness? If an artist offers this context, why would I skip out on it. I am always down for understanding something in the way it was meant to be understood in.
+
+### Thanks for coming :)
+*written while listening to Lush by Snail Mail*
+`;
+
+
 const data = [
   {
     id: 'beginnings',
@@ -51,6 +86,13 @@ const data = [
     description: 'sdsafuh asdpiufj [adsiohubnf oiadusbhjfioj hdsjb oifsdahbk',
     content: passion,
     extra: 'Tuesday, November 6th, 2018'
+  },
+  {
+    id:'heavy-rotation',
+    title: 'my heavy rotation',
+    description: 'My heavy rotaiton of music and random toughts on the subject and how these albums came to be in and stay there.',
+    content: heavyRotation,
+    extra: 'Wednesday, November 7th, 2018'
   }
 ]
 
