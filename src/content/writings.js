@@ -68,6 +68,32 @@ A song is like a sentence in a paragraph or maybe even a sentence in an entire b
 *written while listening to Lush by Snail Mail*
 `;
 
+const selfish = `
+### Preface
+The last section was intialy the first and the rest of this piece came from an influx of thoughts and feelings that came from that section. Talking about censoring myself made me go to social media to see if I was using it in the way I wanted to. This writing was pretty raw and was just a chain of thoughts, so try to read it as such, I guess. Also, I added a bit to the (now) last paragraph.
+
+### I just deleted my twitter.
+I realized that my twitter was not what I wanted it to be, so I deleted it. Was that the best solution? Is getting rid of somehting and making a new one okay? I guess you lose your past and your followers, but that is what I wanted. I'm not sure. Not that I want a private account, because mine are always public... I just did want to bring along the people and accounts that made my old twitter what I didn't want it to be.
+
+### Other people's content, but on your page
+I don't like those types of social media platforms. Why should I retweet or revine or repost this persons content onto my page?  
+> When I logged into my twitter, I expected to see some cringy jokes or some pseudo-edgy one liner about how things can be improved. 
+
+But instead I saw someone else's cringy joke and this made me really sad. I used to tweet these awesome collages of frames from cartoons, tv shows, and anime, combined with an album cover and some quote I made up. I was expecting these types of things! But MY PAGE was full of other peoples things; and yes that is my own fault and doing.
+
+### I thought that I did twitter for myself
+I thought that it was just a place to store what I was doing, what I was watching, what was inspiring me, so that I could see all these and remember them, feel that same feeling that I did when I posted the post. But when i looked back on these posts, I was posting these for other people, not myself. And some of my posts weren't even things I thought or agreed with, it was just a medium to get other people to feel a way that I thought I wanted to feel. Maybe even those ideas I posted for these people were ideas the people were alreadyaligned with and I was just trying to align myself with them... or at least seem that I aligned with them. 
+
+### I'm going to do my website for myself
+Now this platform, this website, my website, this place that no one will look into too seriously, a place where no one will be unless they are here for me and my understandings, I hope will be a place that I can always look at and know that I wrote this for my future self or maybe I wrote it as a homage for my past self and his experiences. I routinely, or maybe weekly if you don't consider that routinely, get fired up and excited about what I can do and what I am going to do. I guess this article is an example, through writing it and maybe not by reading it, but I want to know if I justified myself getting psyched up that one day, or if I just dropped that passion like I dropped my, nevermind I was trying to think if I dropped something today, but I didn't :)
+
+### Though it may just be me here
+I am still hesitant to truthfully write about my most rampant thoughts and put them on this page. In the age where people put everything on the internet, I am confused to why I feel like this. Maybe it is because everything that people put on the internet is... uhhh, laminated? Well, what I mean is that it is covered with something to make it look and feel nicer than it really is. There is something about your posts that isn't yours. There is something about my page that isn't mine. There is something there, that shouldn't be. Here, on this website, I want it to just be what I actually am, for myself. Maybe I am afraid of what I will read a week later, regret putting it up. Regret that experience I wrote so naively about. Well, I guess that I can always just remove that post, but that isn't the point of this. 
+> Honeslty, I am not sure what the point of this is. But I am hitting this keyboard with the stupidest and most curious grin, so I suppose it must be good.
+
+Only more time on this writing habit will show me what I am going for, I just hope it is genuine.
+`;
+
 
 const data = [
   {
@@ -90,6 +116,13 @@ const data = [
     description: 'My heavy rotaiton of music and random toughts on the subject and how these albums came to be in and stay there.',
     content: heavyRotation,
     extra: 'Wednesday, November 7th, 2018'
+  },
+  {
+    id:'selfish-social-media',
+    title: 'social media should be selfish',
+    description: 'Social media selfishness blah blah blah I still need to social media',
+    content: selfish,
+    extra: 'Tuesday, November 13th, 2018'
   }
 ]
 
