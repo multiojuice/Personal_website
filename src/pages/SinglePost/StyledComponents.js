@@ -5,7 +5,8 @@ import {
   white,
   purple,
   darkgrey,
-  yellow
+  yellow,
+  orange
 } from '../../content/colors'
 
 export const PageWrapper = styled.div`
@@ -22,7 +23,7 @@ export const HeaderWrapper = styled.div`
   justify-content: flex-start;
   height: 20vh;
   width: 100%;
-  background-color: ${red};
+  background-color: ${orange};
   margin-bottom: 120px;
 `;
 
@@ -95,7 +96,7 @@ export const ContentWrapper = styled.div`
     padding: 20px;
     font-weight: 600;
     border-radius: 5px;
-    border-left: 18px solid ${red};
-    border-bottom: 24px solid ${red};
+    border-left: 18px solid ${orange};
+    border-bottom: 24px solid ${orange};
   }
 `;
